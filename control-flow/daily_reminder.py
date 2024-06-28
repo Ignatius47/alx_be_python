@@ -13,7 +13,7 @@ match priority:
         print("Invalid priority. Please enter 'high', or 'low'.")
         exit()
 
-if time_bound.lower() == 'yes':
+if time_bound == 'yes':
     reminder += " It requires immediate attention todat!."
     print(reminder)
     input("Press Enter to continue...")
