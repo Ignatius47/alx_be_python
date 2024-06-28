@@ -3,32 +3,39 @@ def get_number(prompt):
         try:
             return float(input(prompt))
         except ValueError:
-            print("Invalid input. Please enter a number.")
+            print("Invalid input. Please enter a valid number.")
 
 def main():
     num1 = get_number("Enter the first number: ")
     num2 = get_number("Enter the second number: ")
-
+    
     operation = input("Choose the operation (+, -, *, /): ")
-
+    
     match operation:
         case '+':
+            # Addition
             result = num1 + num2
-            print(f"{num1} + {num2} = {result}")
+            print(f"The result is {result}.")
         case '-':
+            # Subtraction
             result = num1 - num2
-            print(f"{num1} - {num2} = {result}")
+            print(f"The result is {result}.")
         case '*':
+            # Multiplication
             result = num1 * num2
-            print(f"{num1} * {num2} = {result}")
+            print(f"The result is {result}.")
         case '/':
-            if num2 == 0:
+            # Division
+            if num2 != 0:
                 result = num1 / num2
-                print(f"The result is {result}")
+                print(f"The result is {result}.")
             else:
-                print("cannot divide by zero")
+                # Handle division by zero
+                print("Cannot divide by zero.")
         case _:
-            print("Invalid operation. Please choose (+, -, *, /).")
+            # Handle invalid operation input
+            print("Invalid operation. Please choose from (+, -, *, /).")
 
+# Run the main function when the script is executed
 if __name__ == "__main__":
     main()
