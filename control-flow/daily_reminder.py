@@ -15,6 +15,6 @@ match priority:
 
 if time_bound == 'yes':
     Reminder: += " It requires immediate attention todat!."
-    print(Reminder:)
+    print('Reminder:')
     input("Press Enter to continue...")
     print("Task completed!")
