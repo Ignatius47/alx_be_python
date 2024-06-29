@@ -14,7 +14,7 @@ match priority:
         exit()
 
 if time_bound == 'yes':
-    Reminder: += " It requires immediate attention todat!."
+    Reminder: += " It requires immediate attention today!."
     print('Reminder:')
     input("Press Enter to continue...")
     print("Task completed!")
